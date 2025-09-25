@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: juice-shop
+    env: node
+    region: singapore   # change this to closest region if needed
+    plan: free
+    branch: main        # or "master" depending on your fork
+    buildCommand: "npm install"
+    startCommand: "npm start"
+    autoDeploy: true
